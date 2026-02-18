@@ -55,7 +55,7 @@ python main.py --limit 50 --model deepseek-chat
 |--------------|--------------|----------|-------------------|
 | CoT Baseline | DeepSeek-V3  | 10       | 40.00%            |
 | CoT Baseline | DeepSeek-V3  | 20       | 50.00%            |
-| CoT Baseline | DeepSeek-V3  | 10       | 40.00%            |
+| CoT Baseline | DeepSeek-V3  | 30       | 51.72%            |
 
 > **Note:**  
 > The accuracy aligns with the baseline performance reported in the paper (33%–49% for CoT).  
