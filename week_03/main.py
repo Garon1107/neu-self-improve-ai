@@ -51,7 +51,7 @@ class DeepSeekBaselineExperiment:
     def load_dataset(self, limit=None):
         """Fetch dataset from HF and store in SQLite."""
         print(f"Loading dataset (Limit: {limit})...")
-        dataset = load_dataset("stanfordnlp/web_questions", split="test")
+        dataset = load_dataset("rmanluo/RoG-webqsp", split="test")
         
         if limit:
             dataset = dataset.select(range(limit))
@@ -61,7 +61,7 @@ class DeepSeekBaselineExperiment:
         
         for item in tqdm(dataset, desc="Ingesting"):
             c.execute("INSERT OR IGNORE INTO webqsp_data (id, question, answers) VALUES (?, ?, ?)", 
-                      (item['url'], item['question'], json.dumps(item['answers'])))
+                      (item['id'], item['question'], json.dumps(item['answer'])))
         
         conn.commit()
         conn.close()
