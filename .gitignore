@@ -2,3 +2,8 @@
 *.db
 __pycache__/
 .DS_Store
+
+venv/
+checkpoints/
+log_out.txt
+log_err.txt
