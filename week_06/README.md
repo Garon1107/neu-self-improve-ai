@@ -34,7 +34,8 @@ The paper introduces **polychromic objectives** for policy gradient methods that
 
 **Poly-PPO achieves 91.7% success rate, closely matching the paper's 92.4%.** The ranking Poly-PPO >> PPO > REINFORCE > Pretrained is consistent with the paper's findings. REINFORCE underperforms relative to the paper likely due to our use of a simpler MLP architecture instead of the CNN-GRU used in the paper.
 
-![Results](polychromic_ppo_results.png)
+![Training Curves](training_curves.png)
+![Final Comparison](final_comparison.png)
 
 ## How to Run
 
