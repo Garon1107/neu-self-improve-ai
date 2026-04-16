@@ -1,0 +1,62 @@
+##################################################
+Task: gaia
+📊 Using SINGLE-STAGE scoring for GAIA
+Arguments: Namespace(task_name='gaia', data_file='gaia/data/data.json', result_dir='gaia/results/Qwen3.5-0.8B-LoRA', exp_name=None, output_file='finalresults_direct_output.json', log_dir=None, response_type='direct_output', max_workers=16)
+# task_name: gaia
+# data_file: gaia/data/data.json
+# result_dir: gaia/results/Qwen3.5-0.8B-LoRA
+# exp_name: None
+# output_file: finalresults_direct_output.json
+# log_dir: None
+# response_type: direct_output
+# max_workers: 16
+##################################################
+
+Local OpenAI engine gpt-4o-mini initialized.
+
+
+Accuracy: 11.02% (14/127)
+
+Results saved to gaia/results/Qwen3.5-0.8B-LoRA/finalresults_direct_output.json
+Wrong PIDs: ['0', '1', '2', '3', '4', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '22', '23', '24', '26', '27', '28', '29', '30', '31', '32', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '90', '92', '93', '94', '95', '96', '97', '98', '99', '100', '101', '103', '104', '105', '106', '107', '108', '109', '111', '113', '114', '115', '116', '118', '119', '120', '122', '123', '124', '125', '126']
+Wrong Indices: [0, 1, 2, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23, 24, 26, 27, 28, 29, 30, 31, 32, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 90, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 103, 104, 105, 106, 107, 108, 109, 111, 113, 114, 115, 116, 118, 119, 120, 122, 123, 124, 125, 126]
+Log dir: gaia/logs/Qwen3.5-0.8B-LoRA
+
+Step stats:
+- average_time: 	194.7
+- average_step: 	3.56
+- one_step_rate: 	0.1
+
+Tool usage:
+- None: 	0.575
+- Web_RAG_Search_Tool: 	0.166
+- Ground_Google_Search_Tool: 	0.111
+- Generalist_Solution_Generator_Tool: 	0.027
+- No matched tool given: `Web_RAG_Search_Tool`: 	0.024
+- No matched tool given: `Wikipedia_RAG_Search_Tool`: 	0.015
+- Wikipedia_RAG_Search_Tool: 	0.011
+- Python_Code_Generator_Tool: 	0.007
+- No matched tool given: `Web_Rag_Search_Tool`: 	0.007
+- No matched tool given: `Python_Code_Generator_Tool`: 	0.007
+- No matched tool given: `Generalist_Solution_Generator_Tool`: 	0.004
+- No matched tool given: `Ground_Google_Search_Tool`: 	0.004
+- No matched tool given: 'Wikipedia_RAG_Search_TOOL': 	0.002
+- No matched tool given: W.R.S._RGC_Wiki_Page: 	0.002
+- No matched tool given: None: 	0.002
+- No matched tool given: 'Web_Rag_Search_Tool': 	0.002
+- No matched tool given: wikipedia_ragsearch_tool`.: 	0.002
+- No matched tool given: `Wikipedia_RAG_Search_TOOL`: 	0.002
+- No matched tool given: Video Analysis: 	0.002
+- No matched tool given: _web_rag_search_tool_: 	0.002
+- No matched tool given: {'tool_name': 'Generalist_Solution_Generator_Tool'}: 	0.002
+- No matched tool given: Web_Rag_Search: 	0.002
+- No matched tool given: `Web_Rag_General_Navigation_Tracking_Search_Tool`.: 	0.002
+- No matched tool given: : 	0.002
+- No matched tool given: The selection rests entirely on prioritizing computational precision through generated executable scripts over passive external database lookups when analytical decomposition is required precisely at this juncture involving multiple input variables interacting non-trivially.*: 	0.002
+- No matched tool given: wiki_page_research_tool: 	0.002
+- No matched tool given: 'Wikipedia_RAG_Search_Tool': 	0.002
+- No matched tool given: `Wikipedia_RAG_Search_Tool`.: 	0.002
+- No matched tool given: `YouTube_Downloader`: 	0.002
+- No matched tool given: `Python_Code_Generator_Tool`.: 	0.002
+- No matched tool given: Ground_Google_Search: 	0.002
+Scores saved to gaia/results/Qwen3.5-0.8B-LoRA/final_scores_direct_output.json

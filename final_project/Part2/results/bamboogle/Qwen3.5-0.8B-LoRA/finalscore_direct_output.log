@@ -1,0 +1,77 @@
+##################################################
+Task: bamboogle
+📊 Using SINGLE-STAGE scoring for BAMBOOGLE
+Arguments: Namespace(task_name='bamboogle', data_file='bamboogle/data/data.json', result_dir='bamboogle/results/Qwen3.5-0.8B-LoRA', exp_name=None, output_file='finalresults_direct_output.json', log_dir=None, response_type='direct_output', max_workers=16)
+# task_name: bamboogle
+# data_file: bamboogle/data/data.json
+# result_dir: bamboogle/results/Qwen3.5-0.8B-LoRA
+# exp_name: None
+# output_file: finalresults_direct_output.json
+# log_dir: None
+# response_type: direct_output
+# max_workers: 16
+##################################################
+
+Local OpenAI engine gpt-4o-mini initialized.
+
+
+Accuracy: 52.8% (66/125)
+
+Results saved to bamboogle/results/Qwen3.5-0.8B-LoRA/finalresults_direct_output.json
+Wrong PIDs: ['0', '2', '4', '5', '6', '7', '10', '12', '15', '17', '19', '22', '24', '27', '28', '34', '37', '39', '42', '43', '44', '46', '47', '48', '50', '54', '56', '58', '59', '62', '63', '64', '65', '68', '71', '72', '73', '74', '75', '78', '79', '80', '81', '82', '83', '88', '89', '90', '91', '92', '93', '97', '104', '106', '107', '108', '109', '115', '122']
+Wrong Indices: [0, 2, 4, 5, 6, 7, 10, 12, 15, 17, 19, 22, 24, 27, 28, 34, 37, 39, 42, 43, 44, 46, 47, 48, 50, 54, 56, 58, 59, 62, 63, 64, 65, 68, 71, 72, 73, 74, 75, 78, 79, 80, 81, 82, 83, 88, 89, 90, 91, 92, 93, 97, 104, 106, 107, 108, 109, 115, 122]
+Log dir: bamboogle/logs/Qwen3.5-0.8B-LoRA
+
+Step stats:
+- average_time: 	185.8
+- average_step: 	4.78
+- one_step_rate: 	0.1
+
+Tool usage:
+- None: 	0.453
+- Ground_Google_Search_Tool: 	0.181
+- Web_RAG_Search_Tool: 	0.12
+- No matched tool given: `Wikipedia_RAG_Search_Tool`: 	0.074
+- Wikipedia_RAG_Search_Tool: 	0.04
+- Generalist_Solution_Generator_Tool: 	0.022
+- No matched tool given: `Web_RAG_Search_Tool`: 	0.018
+- No matched tool given: `Ground_Google_Search_Tool`: 	0.012
+- No matched tool given: : 	0.007
+- No matched tool given: Wikipedia_RagSearchTool: 	0.003
+- No matched tool given: `Generalist_Solution_Generator_Tool`: 	0.003
+- No matched tool given: 'Wikipedia_RAG_Search_Tool': 	0.003
+- No matched tool given: `Web_RAG_Search_TOOL`: 	0.003
+- No matched tool given: Wipedia_RAG_Search_Tool: 	0.003
+- No matched tool given: <answer>Wikipedia_RAG_Search_Tool</answer>: 	0.003
+- No matched tool given: Web_Rag_Search_: 	0.003
+- No matched tool given: WipebBot_Wiki: 	0.003
+- No matched tool given: `Ground_`GoogleSearchTool`: 	0.002
+- No matched tool given: `<answer>` <span style="color:red;"></span> No match found due insufficient matching<br><br>
+</think>: 	0.002
+- No matched tool given: Web_RagSearchTool: 	0.002
+- No matched tool given: .wikipedia_RagSearchTool: 	0.002
+- No matched tool given: ` Generalist_Solution_Generator_Tool`.: 	0.002
+- No matched tool given: Web_RagSearch_tool: 	0.002
+- No matched tool given: wiki_RAG_Search_Tool: 	0.002
+- No matched tool given: Ground_Google_Search: 	0.002
+- No matched tool given: `Ground_Google_Search_Tool`.: 	0.002
+- No matched tool given: [`Ground_Google_Search_Tool`](https://www.google.com/search?q=fastest+air-breathing+manned+aircraft): 	0.002
+- No matched tool given: Ground\_Google\_Search\_Tool: 	0.002
+- No matched tool given: WikiSearch: 	0.002
+- No matched tool given: *Exact string name.*#END CRITICAL CHECKLIST# #If User Did Not Need My Help Elsewhere...STOP. Your Turn Now!<answer><end answer>: 	0.002
+- No matched tool given: The selected tool is 'Ground Google Search Tool' because historically this individual's name/specific profile appears frequently cited on major academic sites such as PubMed Central references linking him directly with his role(s), while avoiding hallucinations associated with templates designed only for hypothetical synthetic reasoning tasks where factual extraction without citations might bypass constraints; also fitting perfectly into Rule #10 guidelines requiring real-time internet info over limited math functions when an authoritative source page exists accessible publicly through Google APIs enabled within those GPT interfaces defined here.<answer>Frederick Wilhelm</answer><answer>Frederick Wilhelm</answer><answer>Frederick Wilhelm</answer><output type="str">The job title provided above.</output></result></Answer>: 	0.002
+- No matched tool given: ``: 	0.002
+- No matched tool given: ``w_sn_: 	0.002
+- No matched tool given: Wikipedie_RAG_Search_Tool: 	0.002
+- No matched tool given: Ground_Google_Shorellool: 	0.002
+- No matched tool given: </strong>Ground_Google_Search_Tool.<br><span style="font-size :small">This approach leverages Google Gemini AI capabilities directly from web archives</span>.<br><span style="font-size :small">It provides real-time internet access support enabling precise extraction of factual timelines.</span>-- wait i cannot seem understand why i keep coming up so many model threads..........: 	0.002
+- No matched tool given: [`Ground_Google_Search_Tool`](https://ground.google_search_tool.zenhub.app/assistant?target=1009546828736&toolName=Search&searchId=1009546828736): 	0.002
+- No matched tool given: </br>Web_Rag_search_tool. </answer><end>: 	0.002
+- No matched tool given: `Web_Rag_Search_Tool`: 	0.002
+- No matched tool given: </style>navigate context carefully ensuring all required elements are present properly formatted according instructions,<white space id.\" includes all necessary [context]...\ngenerate unique new lines between segments...",end.",}": 	0.002
+- No matched tool given: <tool_name>. But wait—History Knowledge isn't covered fully there either!* In my analysis above I concluded Ground Google could work alone due limited depth needs vs W/Rags being specialized—but let me check Historical Knowledge explanation again:* It specifically mentions understanding historical context AND lineage aren't fully covered by existing Tools' scope described.* That means I MUST leverage both logic + research skills/tools strategically rather than forcing them into isolation! My previous selection was flawed because assuming One will do everything needed includes ignoring Historical Knowledge requirement...* Okay corrected path:* Use Python_Code_Generator_Tool? No basic arithmetic required.<use>Use Web_RAG_SEARCH_TOOL? No—we'd still miss genealogy.<use>Use Ground_Google_SEARCH_TOOL？No—we'd get summaries; lack detailed citation linking<br>best choice: Use BOTH together effectively OR choose BEST SINGLE TOOL based strictly given constraints?*Instruction says SELECT ONLY ONE TOOL...*Okay allow me reconsidered strategy based strictly interpretation:"The query requires a deep understanding..."implies complexity beyond simple extraction suggests needing synthesis logic—isn't there an option missing?"Looking at Toolbox Metadata again:- Python_Code has require_llm_engine=True,- Generalist_Solution has require_llm_engine=True.- Only 2 other specializations have False,- none support complex synthetic inference beyond keyword matching/list generation.<list-checking against Human Language Understanding:- Question asks identification using available tools/history/knowledge-explained-tools,"therefore appropriate solution involves leveraging knowledge retrieval AND potentially cross-referencing synthesized answers from multiple confirmed trusted sources."Thus selection depends ON WHICH SINGLE TOOLS ARE PROVIDED AVAILABLE TO USE WITH WHICH PARAMETER SETTING?<I cannot invent new combinations into my thought process>"Final Decision Strategy"<select_best_tool>"For optimal results:<1>Select <strong>The Best Single Tool Based Strictly On Available Options</strong><2>If Multiple Candidates Exist Based Solely On Provided Information,<3>&nbsp;&nbsp;&nbsp;&nbsp;- &lt;br&gt;&lt;br&gt;"Check Constraints Again"- Instruction Requirements:<6>Select ONLY ONE<br>- Sub Goal Must BE Directly Achievable<br>- Context Section Contains ALL Information Needed<br>- Response Ends With Context/Sub/Tool Names+no extra content"<6>This implies FINAL CHOICE Must Be Selected From These SPECIFICLY Two Options:<a>Ground GooGLE Search</a><a>Web R Ag</a>".Which Is BETTER Here?<input-type="str">Query="Who was the father of psychoanalysis?</input></output-type>. Testing ground google closely matches keywords)<output-type="str">Response:</p>The answer appears most frequently associated with:</p>SIGMUND FREUD • FATHER OF PSYCHOANALYSIS • FREDERICK WILLIAM HENRY FREUD </p></output-type>. Thus grounding target site directly matches most likely intended intent.</select_best_tool>'s(tool_description)'("A web search powered by Google Gemini provides real-time information...", 'user_metadata'): {"limitations": "...This tools contains less domain specific info...", 'best_practices': 'Choose this tool when you want general information about topic.'}, input_type='str', output_type='str'-Search results'. Testing ground google closely matches keywords)<output-style-style-get("Who won euro 2024 winner"): Output-Type=Str-Summary.</Output>/1958》)</Output>/1958》)</Output>/1958》)</Output}>).</span></div>[{'command': 'execution = python_code.execute(query="Summarize the following text", url=None)', 'description': 'Generate short summary'}, {'command': 'execution = python_code.execute(query="Who won euro 2024?", add_citations=False)', 'description': '}').]# Summary Answer]</div>[{'command': 'execution = python_code.execute(query="""What was Sophie Germain discovered?, add_citations=False""", url=None), description:''}])]# Summary Answer]</div>[{'command': execution=tool.execute(query="""What did Lord Byron say?", add_citations=False), description':' }])']# Summary Answer}</div>[{'command':"summarize_query=query_text"}]"Summary Answer"></table)# SummaryAnswer]"table}</table>#summaryAnswer"></table>#SummaryAnswer"]}[{"query":"search_url","url":"https://en.wikipedia.org/wiki/Sophie__Germain"},"url":"/home/user/Desktop/Fredrich%20William%20Henry%20Freud.html)","title":"Friedrich William Henry Freud"},{"query":"Friedrich Wilhelm Freud","url":"/home/user/Desktop/Fredric%3awilliamHenryFreud.html","title":"Friedric Wilhelm Freu"},{"query":"Father-Freud-Mind-Psychology"},{"query": "\"Father\"ofPsychoanalysis"}],"title": "\"Father\"ofPsychoanalysis"}]]}<response_format>: Justification:\n\nJustification:\nThe selected best single-tool is `<strong>`Ground_<sub>GooGLE_<sub>Searhhool</sub></em>`.\nThe rationale follows three points: 	0.002
+- No matched tool given: `Wikipedia_RAG_Search_tool`: 	0.002
+- No matched tool given: Wolfram_Age_National_Database_Wikipedia_RAG_Search_Tool: 	0.002
+- No matched tool given: Wikipedia R AG Search Tool.<br>Wait — actually checking requirements again:<b>Rules:</b><u>Select ONLY ONE tool.</u><b>The sub-goal must be directly achievable.</b><b>The Context section must contain all information...</b> Okay,<strong>I am allowed</strong> multiple sections within ONE message body per request format specification?* Wait!<u>No!</u>In Instruction Block #4 Response Format:<ol><li>Justify</li>x<ol style="margin-top:-5px">Context<br>x<ol style="margin-top:-5px">Sub-goal<br>x<ol style="margin-top:-5px">Tool Name</li></ol></ul></p>. There are MULTIPLE sections requested inside EACH single response block defined above?* That exceeds safety guidelines' emphasis on conciseness unless requested otherwise...* Let's go back strictly formatting constraints once more:<l/><p class="[bold]Response Format:</l>/<p class="[bold]Rules:</l>/<ul><li>Select <em>only</em> one tool.</li>- <strong>The sub-goal must be directly achievable by selected.</strong>- <strong>The Context section MUST contain ALL info...</strong>- <em>No extra content allowed after those headers respectively?</em>.</h6>e.g., exactly three lines total per component header "<p class='header-line'>", "<ul>", "<div>" etc.? Yes!<div>"context", "</div>"?</div>? Let me count actual HTML tags defined in example structure vs text-only headers requested?<No—"Provide all necessary context (data file names variables)"—so just keywords?"For optimal results..."<pre>(with code)?"</pre>? Rules say Text Only Content Allowed Elsewhere"</pre>". My proposed JSON-like object should technically fit into standard Markdown/code blocks if rendered nicely—but markdown syntax `<code>` might interfere slightly?<User didn't specify code block constraint explicitly—just said Text Only Allow Elsewhere.`Okay,<i>I will create clean Markdown headers/cards wrapping each distinct requirement part perfectly aligned visually while preserving intent spacing exactly matches Requested Section Countings*</i>. This keeps formatting clean while addressing exact paragraph/text boundaries specified—"Use bold/capitalized labels"="<span>[Bold Label]</span>","<span>[Bold Info]</span>", etc."<blockquote>"with quotes covering entire label area."</blockquote>". Each requirement gets its own line-breaks exactly matching visual separation points seen in Requested Headers)."Permissible."Text Only Input Not Allowed Elsewhere."You cannot write Markdown syntax outside your response body unless formatted correctly—so code blocks around JSON objects won't break visual hierarchy well enough under strict text-only parsing enforced elsewhere?) </h6>{}</body}</html>`: 	0.002
+- No matched tool given: [`Wikipedia_RAG_Search_Tool`]: 	0.002
+Scores saved to bamboogle/results/Qwen3.5-0.8B-LoRA/final_scores_direct_output.json

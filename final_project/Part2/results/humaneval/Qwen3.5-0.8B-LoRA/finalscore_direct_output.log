@@ -1,0 +1,56 @@
+##################################################
+Task: humaneval
+📊 Using SINGLE-STAGE scoring for HUMANEVAL
+Arguments: Namespace(task_name='humaneval', data_file='humaneval/data/data.json', result_dir='humaneval/results/Qwen3.5-0.8B-LoRA', exp_name=None, output_file='finalresults_direct_output.json', log_dir=None, response_type='direct_output', max_workers=16)
+# task_name: humaneval
+# data_file: humaneval/data/data.json
+# result_dir: humaneval/results/Qwen3.5-0.8B-LoRA
+# exp_name: None
+# output_file: finalresults_direct_output.json
+# log_dir: None
+# response_type: direct_output
+# max_workers: 16
+##################################################
+
+Local OpenAI engine gpt-4o-mini initialized.
+
+
+Accuracy: 45.12% (74/164)
+
+Results saved to humaneval/results/Qwen3.5-0.8B-LoRA/finalresults_direct_output.json
+Wrong PIDs: ['0', '1', '6', '9', '10', '11', '12', '17', '19', '20', '24', '26', '27', '30', '32', '33', '34', '36', '37', '38', '43', '46', '48', '49', '55', '56', '57', '58', '59', '61', '66', '67', '69', '72', '74', '77', '82', '83', '87', '95', '99', '100', '101', '102', '103', '105', '108', '109', '110', '111', '113', '114', '116', '117', '118', '119', '120', '121', '122', '123', '124', '125', '126', '127', '128', '129', '130', '131', '132', '134', '137', '138', '139', '140', '141', '142', '143', '145', '149', '150', '151', '152', '153', '154', '156', '158', '159', '160', '161', '163']
+Wrong Indices: [0, 1, 6, 9, 10, 11, 12, 17, 19, 20, 24, 26, 27, 30, 32, 33, 34, 36, 37, 38, 43, 46, 48, 49, 55, 56, 57, 58, 59, 61, 66, 67, 69, 72, 74, 77, 82, 83, 87, 95, 99, 100, 101, 102, 103, 105, 108, 109, 110, 111, 113, 114, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 134, 137, 138, 139, 140, 141, 142, 143, 145, 149, 150, 151, 152, 153, 154, 156, 158, 159, 160, 161, 163]
+Log dir: humaneval/logs/Qwen3.5-0.8B-LoRA
+
+Step stats:
+- average_time: 	52.9
+- average_step: 	1.48
+- one_step_rate: 	0.8
+
+Tool usage:
+- None: 	0.584
+- Python_Code_Generator_Tool: 	0.193
+- No matched tool given: `Python_Code_Generator_Tool`: 	0.045
+- Generalist_Solution_Generator_Tool: 	0.045
+- No matched tool given: Python_Code_Generator_Tool
+</answer>: 	0.025
+- No matched tool given: <answer>Python_Code_Generator_Tool</answer>: 	0.025
+- Wikipedia_RAG_Search_Tool: 	0.016
+- Ground_Google_Search_Tool: 	0.008
+- No matched tool given: 'Python_Code_Generator_Tool': 	0.008
+- No matched tool given: <python_code_generator_tool>: 	0.004
+- No matched tool given: [Python_Code_Generator_Tool]: 	0.004
+- No matched tool given: <tool_name>: 	0.004
+- No matched tool given: <answer>: 	0.004
+- No matched tool given: Web_RAG_Search_Tool
+</answer>: 	0.004
+- No matched tool given: : 	0.004
+- No matched tool given: python-code-generator-tool
+</answer>: 	0.004
+- No matched tool given: [`Python_Code_Generator_Tool`](#python_code_generator_tool): 	0.004
+- No matched tool given: <answer>Python_Code_Generator_Tool</answer>
+</answer>: 	0.004
+- No matched tool given: <Python_Code_Generator_Tool>: 	0.004
+- No matched tool given: [`Python_Code_Generator_Tool`](https://www.python-code-generator.com/): 	0.004
+- No matched tool given: Python_Code_Generator_Tool (as it is designed for simple math/algebra problems) or simply execution within a generated script if strict language constraints apply, but given "Available Tools" list only includes one specialized tool for this context... wait, looking at instructions again, I must select one tool from the provided list ['Generalist_Solution_Generator_Tool', 'Ground_Google_Search_Tool', 'Python_Code_Generator_Tool', 'Web_RAG_Search_Tool', 'Wikipedia_RAG_Search_TOOL']. None of these search tools will help here without executing real code first? No wait, I am using my internal knowledge/tool selection logic based on available options in my training data regarding "available tools". Actually, looking at the instruction "Available Tools": ['Generalist_Solution_Generator_Tool', ...] - none are defined as executable code generators like `.execute()`. However, often in these scenarios with limited tools but clear task definition involving basic arithmetic generation within a constrained environment (which might be simulated by generating code), one might look for general coding assistance if that option exists elsewhere or if I can infer from context where an interpreter is likely used implicitly via logic generation? Let me re-read carefully: "Select only ONE tool." If no tool generates runnable scripts with math functions built-in like NumPy or custom libraries exist in this toolbox's demo commands... Ah! The prompt implies I should choose from the *listed* tools unless one fits better locally. But since none listed support pure arithmetic extraction easily without execution? This seems like a mismatch between available toolbox definitions and standard library capabilities required here? Wait! Re-evaluating based on typical dataset patterns where sometimes generic reasoning + local coding + search are combined... Actually, let's consider if any tool helps *define* complex logic though they don't have .execute(). Given strict instructions say Select ONLY ONE Tool AND Sub-Goal must be directly achievable... And all listed tools either do web searching (impossible) or generate text summaries/searches/results (irrelevant). Is there an error in my analysis of what each can do? No - they just describe capabilities. Perhaps there IS NO valid single-tool solution strictly following protocol without executing real system calls which aren't modeled here? OR maybe I should interpret "Available Tools" including online capability as potential fallbacks even though descriptions say so long-time limitations exist? This feels contradictory under strict rule-set interpretation unless there's hidden knowledge about environment simulation not captured fully... However, given constraints of providing ONLY ONE correct answer following format rules strictly - perhaps assuming implicit interpreter access via some mechanism not explicitly detailed beyond standard library usage being expected despite lack of explicit .execute() call examples visible above... Let me check again: Toolbox metadata shows None output_type_field values except description/demo_commands which don't show executable syntax generators besides Python_Code Generator Tool having similar demo commands structure! So actually ALL listed potential solutions involve web searches OR require execution outside defined toolkit scope! But Rule 2 says Sub-goal must be directly achievable by selected Tool AND Rule 3 Context/2 contain info needed to FUNCTION THE TOOL TO WORK FOR ITSELF IN THIS CONTEXT...... If no other choice exists under current knowledge about what those specific texts mean vs reality then this creates an impossible constraint set unless we assume some implicit generator flow occurs through reasoning/downloading external content body part-wise while generating local response?? No wait!I will trust my previous deduction path because typically when such prompts appear with specific limited-tool lists containing only searchers/writers/summarizers rather than executors/libraries/tools meant for pure computation tasks requiring raw math access inside python namespace => ...this situation suggests either test data inconsistency OR expects me to note limitation -> BUT RULES REQUIRE ONE OUTPUT FORMAT WITH JUSTIFICATION etc WITHOUT additional commentary inside </answer> tag before closing properly: 	0.004
+Scores saved to humaneval/results/Qwen3.5-0.8B-LoRA/final_scores_direct_output.json

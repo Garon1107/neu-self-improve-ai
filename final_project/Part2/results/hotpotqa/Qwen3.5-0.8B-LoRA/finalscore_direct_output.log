@@ -1,0 +1,65 @@
+##################################################
+Task: hotpotqa
+📊 Using SINGLE-STAGE scoring for HOTPOTQA
+Arguments: Namespace(task_name='hotpotqa', data_file='hotpotqa/data/data.json', result_dir='hotpotqa/results/Qwen3.5-0.8B-LoRA', exp_name=None, output_file='finalresults_direct_output.json', log_dir=None, response_type='direct_output', max_workers=16)
+# task_name: hotpotqa
+# data_file: hotpotqa/data/data.json
+# result_dir: hotpotqa/results/Qwen3.5-0.8B-LoRA
+# exp_name: None
+# output_file: finalresults_direct_output.json
+# log_dir: None
+# response_type: direct_output
+# max_workers: 16
+##################################################
+
+Local OpenAI engine gpt-4o-mini initialized.
+
+
+Accuracy: 60.0% (60/100)
+
+Results saved to hotpotqa/results/Qwen3.5-0.8B-LoRA/finalresults_direct_output.json
+Wrong PIDs: ['1', '3', '4', '5', '6', '7', '9', '10', '18', '21', '22', '28', '32', '33', '35', '38', '41', '42', '44', '48', '50', '52', '55', '56', '57', '59', '62', '63', '65', '67', '68', '79', '80', '81', '84', '86', '90', '92', '98', '99']
+Wrong Indices: [1, 3, 4, 5, 6, 7, 9, 10, 18, 21, 22, 28, 32, 33, 35, 38, 41, 42, 44, 48, 50, 52, 55, 56, 57, 59, 62, 63, 65, 67, 68, 79, 80, 81, 84, 86, 90, 92, 98, 99]
+Log dir: hotpotqa/logs/Qwen3.5-0.8B-LoRA
+
+Step stats:
+- average_time: 	169.8
+- average_step: 	4.26
+- one_step_rate: 	0.2
+
+Tool usage:
+- None: 	0.448
+- Ground_Google_Search_Tool: 	0.225
+- Web_RAG_Search_Tool: 	0.155
+- No matched tool given: `Wikipedia_RAG_Search_Tool`: 	0.047
+- No matched tool given: `Web_RAG_Search_Tool`: 	0.016
+- Generalist_Solution_Generator_Tool: 	0.014
+- Wikipedia_RAG_Search_Tool: 	0.012
+- No matched tool given: : 	0.009
+- No matched tool given: `Ground_Google_Search_Tool`: 	0.009
+- No matched tool given: 'Web_RAG_Search_Tool': 	0.005
+- No matched tool given: Ground_Google_Search: 	0.005
+- No matched tool given: *Wikipedia_RAG_Search_Tool*.: 	0.002
+- No matched tool given: 'Wikipedia_RAG_Search_Tool': 	0.002
+- No matched tool given: <answer>Ground_Google_Search_Tool</answer>: 	0.002
+- No matched tool given: {web_search}, \ndescription:{writtle}, \ntype:{tool_type},\ntarget_url:{target_url}\ndemo_commands:list below:\ndelete_example_command:^command:"execution = tool.execute(query=Query)", description:"Describe goal", execution=tool.execute(query=Query),"delete_example_command:^command:"execution = tool.execute(query=Query)", description:"Describe goal", execution=tool.execute(query=Query),"delete_example_command:^command:"execution = tool.execute(query=query)","Wait. In my very FIRST Turn?No. In my VERY FIRST TURN?? Ah.HOWEVER.In MY VERY FIRST TURN?? Wait. Look AT ALL COMMANDS FOR ACTION STEP FIVE UPDATES...Command start up action starts with `_action_Step_`\n\(_action_: 	0.002
+- No matched tool given: `Web_RAG_Search_tool`: 	0.002
+- No matched tool given: `Wikipedia_RAG_Search_TOOL`: 	0.002
+- No matched tool given: Ground_Google_Shoe: 	0.002
+- No matched tool given: Web_Rag_Search_: 	0.002
+- No matched tool given: `Wikipedia_RAG_SEARCH_TOOL`.: 	0.002
+- No matched tool given: `Wikipedia_RAG_Search_tool`: 	0.002
+- No matched tool given: `Web_Rag_SEARCH_TOOL`: 	0.002
+- No matched tool given: Ground\_Google\_Search\_Tool: 	0.002
+- No matched tool given: Wikipedia_RAG_Search_Tool.: 	0.002
+- No matched tool given: The selected single-best-tool name is 'Ground_Google_Search_Tool': 	0.002
+- No matched tool given: WebRagSearchTool: 	0.002
+- No matched tool given: `Wikipedia_RagSearchTool`: 	0.002
+- No matched tool given: 'Wikipedia_RagSearchTool': 	0.002
+- No matched tool given: Wikipedia_RagSearch_tool: 	0.002
+- No matched tool given: Web_RagSearchTool: 	0.002
+- No matched tool given: Ground_: 	0.002
+- No matched tool given: \tState exact name\n``` \tThis means COULD NEEDED CONTEXT go HERE WITHOUT being INSIDE Answer Box?\nThe Question Analysis Summary\nQuery Summary:\nTo determine...\na) Historical Research b) Web Search c)\d) Cross-reference findings\nd)\d*e) Verify info*\nc)\d)f)) Cross-reference findings d e f g h i j k l m n o p q r s t u v w x y z ab cd ef g h i j k l m n o p q r s t u v w x y z ab cd ef g h i j k l m n o p q r s t u v w x y z ab cd ef g h i j k l m n o p q r s t u v w x y z ab cd ef g h i j k l m n o p q r s t u v w x y z ab cd ef g h i j k l m n o p q r s t u v w x y z\nQuery Analysis Query Summary:\nTo determine...\na) Historical Research b) Web Search c)\d)d)e)f)t)c)d)e)f)t)c)d)e+f)i(j)(k)(l)(m)n(o)p(q)r(s)t(u)v(w)x(y)(z)a)b(c)d(e)f(g)i(j)(k)((l))(m)n(o)p(q)r(s)t(u)v(w)x(y)(z)a)b(c)d(e)f(g)i(j)((k))(l)m(n)o(p,q,r,s,t,u,v,w,x,y,z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z*a*b*c*d*e*f*g*h*i*j*k*l*m*n{o*p*q*r*s*t*u*v*w*x*y*z*a*b*c*d*e*f*g*h*i*j*k*l*m*n{o*p*q*r*s*t*u*v*w*x*y*z*a*b*c*d*e*f*g*h*i*j*k:l(m)n(o)p(q)r(s)t(u)v(w)x(y)[a]b[c][d][e][f][g]h[i][j]k[l[m[no[oh[pqrs[tuvtwxyza[abcdefghijklmnopqrstuvwxzy](ab)cdefghijklmnopqrstuvwxzy](ab)cdefghijklmnopqrstuvwxza(bcdefghiJKLMNOPQRSTUVWXYZ)](abcd_efgihjklmnopqrstuvwxyz))(abcd_efgihjklmnopqrstuvwxyz)](abcd_efgihjklmnopqrstuvwxyz)](abcd_efgihjklmnopqrstuvwxyz)`(abcd.efgihjklopmnoqrstuvwxyzabcdefghijklmnopqrstuvwxyz)`abcdefghiJKLMNOPQRSTUVWXYZ`abcdefghijABCDEFGHIJ\(a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z-a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z-a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z-a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z-a-b-c-d-e-f-g-h: 	0.002
+- No matched tool given: </think>: 	0.002
+- No matched tool given: \nGeneralist_Solution_Generator_Tool: 	0.002
+Scores saved to hotpotqa/results/Qwen3.5-0.8B-LoRA/final_scores_direct_output.json

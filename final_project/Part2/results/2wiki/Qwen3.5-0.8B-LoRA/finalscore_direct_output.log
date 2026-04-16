@@ -1,0 +1,99 @@
+##################################################
+Task: 2wiki
+📊 Using SINGLE-STAGE scoring for 2WIKI
+Arguments: Namespace(task_name='2wiki', data_file='2wiki/data/data.json', result_dir='2wiki/results/Qwen3.5-0.8B-LoRA', exp_name=None, output_file='finalresults_direct_output.json', log_dir=None, response_type='direct_output', max_workers=16)
+# task_name: 2wiki
+# data_file: 2wiki/data/data.json
+# result_dir: 2wiki/results/Qwen3.5-0.8B-LoRA
+# exp_name: None
+# output_file: finalresults_direct_output.json
+# log_dir: None
+# response_type: direct_output
+# max_workers: 16
+##################################################
+
+Local OpenAI engine gpt-4o-mini initialized.
+
+
+Accuracy: 53.5% (107/200)
+
+Results saved to 2wiki/results/Qwen3.5-0.8B-LoRA/finalresults_direct_output.json
+Wrong PIDs: ['0', '1', '3', '4', '6', '7', '8', '13', '18', '19', '20', '21', '23', '25', '27', '31', '32', '33', '34', '35', '40', '43', '45', '48', '49', '50', '52', '53', '54', '55', '56', '58', '60', '62', '63', '64', '69', '70', '71', '78', '79', '80', '81', '85', '86', '88', '89', '92', '94', '95', '98', '102', '103', '107', '109', '111', '112', '113', '115', '117', '118', '123', '125', '130', '133', '135', '144', '146', '148', '149', '150', '151', '155', '160', '161', '163', '164', '165', '169', '170', '174', '177', '179', '180', '181', '183', '184', '187', '189', '192', '194', '197', '199']
+Wrong Indices: [0, 1, 3, 4, 6, 7, 8, 13, 18, 19, 20, 21, 23, 25, 27, 31, 32, 33, 34, 35, 40, 43, 45, 48, 49, 50, 52, 53, 54, 55, 56, 58, 60, 62, 63, 64, 69, 70, 71, 78, 79, 80, 81, 85, 86, 88, 89, 92, 94, 95, 98, 102, 103, 107, 109, 111, 112, 113, 115, 117, 118, 123, 125, 130, 133, 135, 144, 146, 148, 149, 150, 151, 155, 160, 161, 163, 164, 165, 169, 170, 174, 177, 179, 180, 181, 183, 184, 187, 189, 192, 194, 197, 199]
+Log dir: 2wiki/logs/Qwen3.5-0.8B-LoRA
+
+Step stats:
+- average_time: 	229.7
+- average_step: 	5.21
+- one_step_rate: 	0.2
+
+Tool usage:
+- None: 	0.397
+- Ground_Google_Search_Tool: 	0.224
+- No matched tool given: `Wikipedia_RAG_Search_Tool`: 	0.099
+- Web_RAG_Search_Tool: 	0.096
+- Wikipedia_RAG_Search_Tool: 	0.054
+- No matched tool given: `Ground_Google_Search_Tool`: 	0.017
+- No matched tool given: : 	0.016
+- No matched tool given: `Web_RAG_Search_Tool`: 	0.013
+- Generalist_Solution_Generator_Tool: 	0.012
+- No matched tool given: 'Wikipedia_RAG_Search_Tool': 	0.012
+- No matched tool given: Ground_Google_Search: 	0.003
+- No matched tool given: Wikipeda R AG Search Tool: 	0.003
+- No matched tool given: `Wikipedia_RAG_Search_Tool`.: 	0.003
+- No matched tool given: `Wikipedia_RAG_Search_TOOL`: 	0.003
+- No matched tool given: Wikipedian RAG Search Tool: 	0.003
+- No matched tool given: `Generalist_Solution_Generator_Tool`: 	0.002
+- No matched tool given: `Wikipedia_RAG_Search.Tool`: 	0.002
+- No matched tool given: 'Wikipedia_Rag_Search_Subgoal': 	0.001
+- No matched tool given: 'Web_Rag_search_tool': 	0.001
+- No matched tool given: Web_Rag_Search_: 	0.001
+- No matched tool given: Wikepedia_RAG_Search_Tool: 	0.001
+- No matched tool given: - Web_RAG_Search_Tool: 	0.001
+- No matched tool given: 'Wikipedia_Rag_Patch': 	0.001
+- No matched tool given: Wikipedias-Rag-Search-Tool: 	0.001
+- No matched tool given: Generalist_Solution_Generator_: 	0.001
+- No matched tool given: WicroniaRagSearch_: 	0.001
+- No matched tool given: WIKIPEDIA_TAGGING_SEARCH_TOOL: 	0.001
+- No matched tool given: Wittenpice_Rag_Search_Tool: 	0.001
+- No matched tool given: ``: 	0.001
+- No matched tool given: wiki_search_tool (or strictly following provided tool list: 'Wikipedia_RAG_Search_TOOL'): 	0.001
+- No matched tool given: Wiki_search_tool: 	0.001
+- No matched tool given: 'Web_Rag_Search_TOOL': 	0.001
+- No matched tool given: Web_Rag_: 	0.001
+- No matched tool given: Web_RAG_Search_Tool.
+Sub-goal 1 & 2:* Step-by-step retrieval.* -> Step-by-step extraction.* -> Extracting YearBorn info.* -> Comparing YearsBorn.* -> Determining BornFirst(Chronological comparison).* Context:* Provide links/URLs/page titles/Names/Wikidata/MetaData fields that link back/enforce relevance verification.`: 	0.001
+- No matched tool given: Wikipedia_Rag_Search_: 	0.001
+- No matched tool given: `Web_Rag_search_tool`:: 	0.001
+- No matched tool given: `Wikipedia_RAG_SEARCH_TOOL`: 	0.001
+- No matched tool given: `Ground_Google_Search_Tool`.: 	0.001
+- No matched tool given: Wiki_Pages: 	0.001
+- No matched tool given: wiki_search_tool: 	0.001
+- No matched tool given: wikipedia_rags_search_tool: 	0.001
+- No matched tool given: \nThe `<Tool_Name>`: 	0.001
+- No matched tool given: The exact name selected is Wikipedia_Rag.: 	0.001
+- No matched tool given: 'Web_Rag_Search_Tool': 	0.001
+- No matched tool given: `[GROUND_GOOGLE_SEARCH_TOOL]`: 	0.001
+- No matched tool given: 'Web_RAG_Search_TOOL': 	0.001
+- No matched tool given: WvpidneRAgSearchTool: 	0.001
+- No matched tool given: Web\_Rag\_Search\_Tool: 	0.001
+- No matched tool given: `Web_RAG/Search_tool_Wiki/Get_detail/Wikimedia_Research_api/Get_name/Find_Name_from_Wikidata_BioPage_id/Find_Name_from_Wikidata_API_for_Author_ID_ID_of_BioPage_id.html`: 	0.001
+- No matched tool given: Ground_Google_Search_: 	0.001
+- No matched tool given: `Wikipedia_Rag_Search_Tool`: 	0.001
+- No matched tool given: \nTo proceed...\no\nWait no—I'll just write clean compliant response following all formatting rules precisely without trying too hard around contradictions initially*: 	0.001
+- No matched tool given: Ground Google Search Tool..." 
+}  
+```  
+Is Valid Only IF EVERY SINGLE LINE ABOVE HAS A CORRESPONDING ACTION STEP BELOW IT WHICH HAS A MATCHING SUB GOAL AND MUST HAVE AN OUTPUT TEXT RESULT FROM WHICH WE CAN COPY-CUT-PASTE-PASS DOWN TO NEXT LINE AS CONTEXT.* So Since We Have All Lines Above With Their Own Actions Below Them Which Have Matches And Must Match So We Can Connect Everything Together Without Breaking Integrity...* Therefore My Logic Is Validated...* Therefore Next Line MUST Be:*
+```json  
+{    
+    "Justification: Selecting Ground Google...": 	0.001
+- No matched tool given: `Web_Rag_Search_tool`: 	0.001
+- No matched tool given: `Wikipedia_Rag_Search_ool`: 	0.001
+- No matched tool given: Wikipedia_Ragsearch_tool: 	0.001
+- No matched tool given: [`Ground_Google_Search_Tool`](#ground-google_search-tool)<div id="" class="" style=""></code></div>: 	0.001
+- No matched tool given: <strong>Wikipedia_RMatch</strong>: 	0.001
+- No matched tool given: Wikipedia-Rag-Search-Tool: 	0.001
+- No matched tool given: Ground Google Search Tool<br>Output Type: str<br>Input Type: str<br><em>Note:</em> While GitHub/Twitter links aren't explicitly supported here,<the logical inference implies relying on existing public domain bibliographic resources indexed globally."</em>*Alternatively*, could one assume standard database lookup index usage implied by previous failures suggesting system lacks native search deep dive into personal details?<font color="#e74c3c"><i>[Alternative Path] If strict adherence required avoiding new-code-execution loops while still needing accuracy:</i></font>&nbsp;&nbsp;&nbsp;- Use Generalist Solution Generator Toolkit ONLY as per instruction "For optimal results with GSG..."&lt;br&gt;- BUT GSG outputs plain text summaries &lt;br&gt;- &lt;i>[FAIL]</i>&nbsp;&nbsp;<font color="#fbcac2">This creates circular dependency/infeasibility.</font>&amp;font color="#e67e22">//&amp;font color="#fbcac2" <-- WAIT! Look at Input Types again:<td align=&quot;text-center&quot; align=&quot;text-center&quot;;&gt;</td)<td align=&quot;text-left&quot;;align=&quot;text-left&quot;"><tr align=&quot;text-table&quot;"><th rowspan='&gt;' colspan='?' id='row_&#xAAED;&#xAAED'>search_query</th></tr><tr align='text-center';'><th rowspan='?' id='col_&#xAAED;&#xAAED'>citation_support</th></tr><tr>$\text{search\_query}$\text{'default'}$.\$\,\text{is\_citable}$\,\text{'default'}$.\$\,$$<$table cellpadding=*&gt;</table cellbordering=$\begin{tabular}{ll} \hline \hline $\mathbf{\mathbb{Q}}=\left(\begin{array}{l}\mathbf{n}\\ \mathbf{k}\end{array}\right)$ $\\ \mathbb{T}=\left(\begin{array}{l l l l} (\boldsymbol{\lambda}_n)_{n=^{\bullet}}^{k}& \\ (\sigma_n)_{n=k+^{\bullet}}^\infty & \\ (\tau_n)_{n=k+^{\bullet}}^\infty & \\ (\mu_n)_{n=k+^{\bullet}}^\infty \end{array}\right)$ $\dots$ </tbody>\t\tendrow\n\theorem {\displaystyle\Sigma = (\sum_j n_j)\cdot(\sum_k k_k)^{-1}$.}</table>$Cone={(col widths)}=<body>{(widths)}</body>\qquad [Euler identity]$.</body>\neq[\Sigma]\eq[(\lambda_n)\cdot\nonumber((k)^{-})]}[\tau]\neq[Sum].]<ul class="_list">\item [\Sigma]=($[The Sum]$).\$(Sum)=($[N]*([M]) )).</li>$item [\Sigma]=N *\nonumber[I]{[(M)]^{-}[I]}[#] = [N]*[[((M))^{-]][I][J]].<ul class="_list">\item $[\Sigma]$=[The Sum].)</li>$item [\Sigma]=Nonop([X])*[$(X)^{-}].](SUM)[Node]:[((X))-].[Node]:[[(X)]^-]].)<ul class="_list">\item $[\Sigma]$=[The Sum].)</li>$Item [\Sigma]=[NonOp(X)][NonOp([(Map(n)->(((Map(n)->(((Map(n)->(...)))))))): 	0.001
+- No matched tool given: wiki-search: 	0.001
+Scores saved to 2wiki/results/Qwen3.5-0.8B-LoRA/final_scores_direct_output.json

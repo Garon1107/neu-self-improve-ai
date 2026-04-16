@@ -1,0 +1,59 @@
+##################################################
+Task: bamboogle
+📊 Using SINGLE-STAGE scoring for BAMBOOGLE
+Arguments: Namespace(task_name='bamboogle', data_file='bamboogle/data/data.json', result_dir='bamboogle/results/Qwen3.5-2B', exp_name=None, output_file='finalresults_direct_output.json', log_dir=None, response_type='direct_output', max_workers=16)
+# task_name: bamboogle
+# data_file: bamboogle/data/data.json
+# result_dir: bamboogle/results/Qwen3.5-2B
+# exp_name: None
+# output_file: finalresults_direct_output.json
+# log_dir: None
+# response_type: direct_output
+# max_workers: 16
+##################################################
+
+Local OpenAI engine gpt-4o-mini initialized.
+
+
+Accuracy: 63.2% (79/125)
+
+Results saved to bamboogle/results/Qwen3.5-2B/finalresults_direct_output.json
+Wrong PIDs: ['1', '4', '5', '6', '7', '11', '12', '13', '15', '19', '20', '22', '23', '28', '34', '38', '42', '43', '45', '47', '50', '52', '54', '58', '59', '63', '65', '66', '68', '72', '74', '78', '79', '83', '85', '86', '87', '91', '92', '95', '98', '99', '104', '107', '109', '122']
+Wrong Indices: [1, 4, 5, 6, 7, 11, 12, 13, 15, 19, 20, 22, 23, 28, 34, 38, 42, 43, 45, 47, 50, 52, 54, 58, 59, 63, 65, 66, 68, 72, 74, 78, 79, 83, 85, 86, 87, 91, 92, 95, 98, 99, 104, 107, 109, 122]
+Log dir: bamboogle/logs/Qwen3.5-2B
+
+Step stats:
+- average_time: 	118.1
+- average_step: 	4.45
+- one_step_rate: 	0.3
+
+Tool usage:
+- None: 	0.297
+- Ground_Google_Search_Tool: 	0.234
+- No matched tool given: `Wikipedia_RAG_Search_Tool`: 	0.192
+- Wikipedia_RAG_Search_Tool: 	0.124
+- Web_RAG_Search_Tool: 	0.05
+- Generalist_Solution_Generator_Tool: 	0.027
+- No matched tool given: `Ground_Google_Search_Tool`: 	0.014
+- No matched tool given: Generalist_Solution_Generator.Tool: 	0.009
+- Python_Code_Generator_Tool: 	0.007
+- No matched tool given: `Wikipedia_RAG_Search_Tool`
+</answer>: 	0.005
+- No matched tool given: Web_RagSearchTool: 	0.005
+- No matched tool given: `Wikipedia_Rag_search_tool`: 	0.004
+- No matched tool given: `Web_RAG_Search_Tool`: 	0.004
+- No matched tool given: None: 	0.004
+- No matched tool given: State exact name... Rules ... Select only ONE tool." This implies ALL output must be formatted around selecting one specific tool/toolchain flow description leading up to answering via those tools' outputs IF they were instantiated here—but since they aren't instantiated yet...: 	0.002
+- No matched tool given: Web\_Rag\_Search\_Tool: 	0.002
+- No matched tool given: Ground_Google_Search: 	0.002
+- No matched tool given: `Wikipedia_RAG_Search_Tool`</answer>: 	0.002
+- No matched tool given: Wipeikipedia_RAG_Search_Tool: 	0.002
+- No matched tool given: `Python_Code_Generator_Tool`: 	0.002
+- No matched tool given: `Ground_Google_Search_Tool``command example simulates proper embedding/injection pattern expected by system.$\rightarrow$Optimal next step chosen.$\rightarrow$"Answer": "<answer>San Francisco</answer>": 	0.002
+- No matched tool given: `Ground_Google_Search_Tool`.: 	0.002
+- No matched tool given: Wipepedia_RAG_Search_Tool: 	0.002
+- No matched tool given: WipeCitation_RAG_Search_Tool: 	0.002
+- No matched tool given: ". Order confirmed correct per latest guideline text received initially stating response format ends after those three lines necessarily before any extra content allowed—which matches my plan exactly.*: 	0.002
+- No matched tool given: `Wikipedia_RAG_Search_TOOL`: 	0.002
+- No matched tool given: Wipekedia_RAG_Search_Tool: 	0.002
+Scores saved to bamboogle/results/Qwen3.5-2B/final_scores_direct_output.json

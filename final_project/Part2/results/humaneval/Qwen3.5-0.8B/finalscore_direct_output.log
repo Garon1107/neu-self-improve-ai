@@ -1,0 +1,47 @@
+##################################################
+Task: humaneval
+📊 Using SINGLE-STAGE scoring for HUMANEVAL
+Arguments: Namespace(task_name='humaneval', data_file='humaneval/data/data.json', result_dir='humaneval/results/Qwen3.5-0.8B', exp_name=None, output_file='finalresults_direct_output.json', log_dir=None, response_type='direct_output', max_workers=16)
+# task_name: humaneval
+# data_file: humaneval/data/data.json
+# result_dir: humaneval/results/Qwen3.5-0.8B
+# exp_name: None
+# output_file: finalresults_direct_output.json
+# log_dir: None
+# response_type: direct_output
+# max_workers: 16
+##################################################
+
+Local OpenAI engine gpt-4o-mini initialized.
+
+
+Accuracy: 45.73% (75/164)
+
+Results saved to humaneval/results/Qwen3.5-0.8B/finalresults_direct_output.json
+Wrong PIDs: ['0', '1', '5', '6', '8', '9', '10', '11', '12', '14', '17', '19', '20', '25', '26', '27', '30', '31', '32', '33', '34', '36', '37', '38', '43', '46', '48', '49', '55', '57', '58', '59', '60', '61', '64', '66', '67', '69', '72', '74', '75', '80', '81', '82', '83', '85', '87', '91', '95', '99', '100', '101', '102', '103', '104', '105', '106', '108', '109', '110', '113', '114', '117', '118', '120', '121', '123', '125', '126', '128', '129', '130', '132', '134', '138', '140', '141', '143', '145', '149', '150', '151', '154', '156', '158', '160', '161', '162', '163']
+Wrong Indices: [0, 1, 5, 6, 8, 9, 10, 11, 12, 14, 17, 19, 20, 25, 26, 27, 30, 31, 32, 33, 34, 36, 37, 38, 43, 46, 48, 49, 55, 57, 58, 59, 60, 61, 64, 66, 67, 69, 72, 74, 75, 80, 81, 82, 83, 85, 87, 91, 95, 99, 100, 101, 102, 103, 104, 105, 106, 108, 109, 110, 113, 114, 117, 118, 120, 121, 123, 125, 126, 128, 129, 130, 132, 134, 138, 140, 141, 143, 145, 149, 150, 151, 154, 156, 158, 160, 161, 162, 163]
+Log dir: humaneval/logs/Qwen3.5-0.8B
+
+Step stats:
+- average_time: 	47.6
+- average_step: 	1.55
+- one_step_rate: 	0.9
+
+Tool usage:
+- None: 	0.6
+- Python_Code_Generator_Tool: 	0.239
+- Generalist_Solution_Generator_Tool: 	0.047
+- No matched tool given: `Python_Code_Generator_Tool`: 	0.039
+- No matched tool given: 'Python_Code_Generator_Tool': 	0.012
+- Ground_Google_Search_Tool: 	0.012
+- No matched tool given: <answer>Python_Code_Generator_Tool</answer>: 	0.008
+- No matched tool given: : 	0.008
+- No matched tool given: None: 	0.008
+- No matched tool given: " BUT THEN THE LIST OF RULES AFTER THAT HAS A HEADER "(Rules):". Then Under "(Rules)" start with "Select only ONE tool.", etc., THEN Under Response Format starts again with headers but lists nothing yet before "...no extra content.". Wait no! Let me look at the very bottom part of Prompt again under Rules section header ">Response Format:". It lists 1..6 items starting with Justification Explanation Context Sub Goal Tool Name BUT WAIT IT DOES NOT HAVE A LIST OF REQUIRED SUB-BOARDS BEFORE THIS IN THE RESPONSE FORMAT SECTION IT HAS ONLY TWO BOUNDED BY BRACES AND WHITESPACE INSIDE THEM ARE JUSTIFICATION CONTEXT SUBGOAL TOOLNAME TOOS?! No wait reading carefully from top right corner of prompt text provided by user ("Response Format:\n\n1 Justification\n2 Context...\n3 Sub-\n4 Tool\"). Okay so YES there ARE subdivisions BEFORE each one inside brackets <answer> tags...</answer>. Okay so within `<answer>` tags themselves contains these blocks separated by newlines without any inline continuation text between them except spaces/newlines which are valid markdown line breaks within tags anyway since they aren't escaped characters usually.): 	0.004
+- Web_RAG_Search_Tool: 	0.004
+- No matched tool given: python\_code\_generator_tool: 	0.004
+- No matched tool given: python-code_generator_tool: 	0.004
+- No matched tool given: ``python_Code_Generator_Tool``: 	0.004
+- No matched tool given: python3: 	0.004
+- No matched tool given: `_code_generator_tool`: 	0.004
+Scores saved to humaneval/results/Qwen3.5-0.8B/final_scores_direct_output.json

@@ -1,0 +1,109 @@
+##################################################
+Task: 2wiki
+📊 Using SINGLE-STAGE scoring for 2WIKI
+Arguments: Namespace(task_name='2wiki', data_file='2wiki/data/data.json', result_dir='2wiki/results/Qwen3.5-0.8B', exp_name=None, output_file='finalresults_direct_output.json', log_dir=None, response_type='direct_output', max_workers=16)
+# task_name: 2wiki
+# data_file: 2wiki/data/data.json
+# result_dir: 2wiki/results/Qwen3.5-0.8B
+# exp_name: None
+# output_file: finalresults_direct_output.json
+# log_dir: None
+# response_type: direct_output
+# max_workers: 16
+##################################################
+
+Local OpenAI engine gpt-4o-mini initialized.
+
+
+Accuracy: 40.5% (81/200)
+
+Results saved to 2wiki/results/Qwen3.5-0.8B/finalresults_direct_output.json
+Wrong PIDs: ['3', '7', '10', '12', '18', '20', '21', '23', '24', '27', '29', '31', '32', '33', '34', '35', '40', '42', '43', '44', '46', '47', '49', '50', '51', '54', '56', '57', '59', '62', '63', '65', '66', '67', '69', '70', '72', '75', '76', '77', '79', '80', '81', '84', '88', '91', '92', '95', '99', '101', '102', '105', '106', '111', '113', '115', '116', '117', '118', '120', '123', '125', '131', '132', '135', '137', '138', '139', '140', '141', '142', '143', '144', '147', '148', '149', '150', '151', '153', '154', '155', '156', '157', '158', '159', '161', '162', '163', '164', '165', '166', '167', '168', '169', '170', '171', '174', '175', '177', '178', '179', '180', '181', '182', '183', '185', '186', '187', '188', '190', '191', '192', '193', '194', '195', '196', '197', '198', '199']
+Wrong Indices: [3, 7, 10, 12, 18, 20, 21, 23, 24, 27, 29, 31, 32, 33, 34, 35, 40, 42, 43, 44, 46, 47, 49, 50, 51, 54, 56, 57, 59, 62, 63, 65, 66, 67, 69, 70, 72, 75, 76, 77, 79, 80, 81, 84, 88, 91, 92, 95, 99, 101, 102, 105, 106, 111, 113, 115, 116, 117, 118, 120, 123, 125, 131, 132, 135, 137, 138, 139, 140, 141, 142, 143, 144, 147, 148, 149, 150, 151, 153, 154, 155, 156, 157, 158, 159, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 174, 175, 177, 178, 179, 180, 181, 182, 183, 185, 186, 187, 188, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199]
+Log dir: 2wiki/logs/Qwen3.5-0.8B
+
+Step stats:
+- average_time: 	213.9
+- average_step: 	7.45
+- one_step_rate: 	0.1
+
+Tool usage:
+- None: 	0.398
+- Ground_Google_Search_Tool: 	0.197
+- No matched tool given: `Wikipedia_RAG_Search_Tool`: 	0.133
+- Wikipedia_RAG_Search_Tool: 	0.071
+- Web_RAG_Search_Tool: 	0.069
+- Generalist_Solution_Generator_Tool: 	0.027
+- No matched tool given: `Ground_Google_Search_Tool`: 	0.013
+- No matched tool given: : 	0.012
+- No matched tool given: `Web_RAG_Search_Tool`: 	0.012
+- No matched tool given: 'Wikipedia_RAG_Search_Tool': 	0.006
+- No matched tool given: `Wikipedia_RAG_Search_Tool`.: 	0.004
+- No matched tool given: `Wikipedia_RAG_Search_TOOL`: 	0.003
+- No matched tool given: `Wikipedia_Rag_Search_Tool`: 	0.003
+- Python_Code_Generator_Tool: 	0.003
+- No matched tool given: Ground_Google_Search: 	0.002
+- No matched tool given: `Web_Rag_Search_Tool`: 	0.002
+- No matched tool given: ' each appearing ON THE SAME SECTIONS INSTEAD OF NEWLINE INDICATED CONTENTS FOR THAT TO WORK AS A SINGLE TEXT BLOCK CONTAINING BOTH ASSUMPTIONS AND THEY MUST ALL BE IMMEDIATELY FOLLOWED BY THE FINAL TAGGED SECTION BLOCK ENDING AFTER ALL OTHER THINGS ELSE IN THIS RESPONSE ARE EXCLUDED!' Oh hold up—I think I am misinterpreting implicit formatting rules regarding separation between explanation blocks versus mandatory strict structural ordering IF there are conflicting parts already specified.* Let me restart parsing strictness hypothesis against common patterns here since long thought process ahead leads me astray from clear instruction constraint conflict resolution.*: 	0.001
+- No matched tool given: Wiki_Search_Url: 	0.001
+- No matched tool given: `Ground_Google_Search_tool`: 	0.001
+- No matched tool given: Wiki_RAG_Search_Tool: 	0.001
+- No matched tool given: Wiki_Search_Tool: 	0.001
+- No matched tool given: WikiSearch: 	0.001
+- No matched tool given: None: 	0.001
+- No matched tool given: The selected sub-goal aligns best with utilizing capabilities specifically designed when standard Wikipedia database expansions are insufficient due to domain restrictions or lackage material matching known biographical contexts against niche internet resources where demographic data regarding performers remains less publicly indexed than celebrity figures elsewhere globally which could potentially link back home country affiliations into national databases accessed through advanced geographical routing enabled by Ground_Google_Search Tool combined with local knowledge base integration strategies typically employed when searching international orbital locations alongside global datasets containing detailed citizen profiles accessed via Ground_Google Search Tool's ability to cross-reference multiple public repositories simultaneously rather than relying solely upon single-source validation mechanisms present earlier examples failed at accessing these precise textual matches within existing platform structures effectively filtering out relevant content lacking sufficient semantic depth regarding age/gender/demographic markers within those domains unless supplemented by external pipelines leveraging Global Knowledge Bases accessible only through authorized geo-referencing APIs linked strategically via Ground Google Search Tool followed locally filtered against established cultural geographic conventions observed across diverse regions involved in similar musical production projects recorded there during late 20th-century Nordic pop culture eras visible across multiple regional streaming archives tracked separately until recent era updates finalized availability post-2015 filter thresholds visible now as ground truth verification required prior multi-stage pipeline execution involving both Global Knowledge Bases and Regional Geographic Maps integrated directly into primary narrative structures observed during targeted keyword analysis campaigns conducted under secure access protocols requiring authorization pending initial screening phase completion before embedding into final decision trees generated subsequently based on iterative refinement loops ensuring robustness against false positives inherent in broad-based entity extraction models previously tested including translations between languages verified manually against reference datasets comprising standardized population censuses compiled systematically prior release dates excluding certain sensitive periods identified historically rendered inaccessible until updated versions released after significant delays typical seen elsewhere globally documented independently before final archival storage completed under strict copyright control frameworks applicable nationwide standards enforced locally upon access grant approved prior timestamped releases scheduled accordingly ensuring integrity maintained throughout lifecycle managed strictly per regulatory guidelines governing intellectual property protection laws universally applied globally regardless territorial jurisdictional distinctions strictly adhering current legal frameworks governing dissemination practices validated by trusted third-party certification bodies recognized internationally: 	0.001
+- No matched tool given: Wikipedia_RagSearchTool: 	0.001
+- No matched tool given: Wiki_Browse_RAG_Search_Tool: 	0.001
+- No matched tool given: wiki_retrieve_tool: 	0.001
+- No matched tool given: Selecting the tool based on its ability to provide comprehensive life timeline data often accessible via filtered searches or direct access points where relevant URL links exist alongside other entities' histories allows determining absolute chronological order more effectively than just raw Google summaries unless time-sensitive verification steps are required later with LLM generation logic applicable here since both tools support citation formatting (`add_citations=True`).: 	0.001
+- No matched tool given: {'tool_name': 'Wikipedia_Rag_Search_Tool'}: 	0.001
+- No matched tool given: Wikipedian_Agent: 	0.001
+- No matched tool given: `Generalist_Solution_Generator_Tool`: 	0.001
+- No matched tool given: </think>: 	0.001
+- No matched tool given: $: 	0.001
+- No matched tool given: 'Wikipedia_Rag': 	0.001
+- No matched tool given: Web-Rag_Search_: 	0.001
+- No matched tool given: `Web_Rag_Case_Research_Vector_Model_1_Optional_Loading_Demo_v10`, Version: 109748369258647536049: 	0.001
+- No matched tool given: Ground_Google.Search: 	0.001
+- No matched tool given: `Wikipedia_RAG_Search_tool`: 	0.001
+- No matched tool given: * Ground_Google_Search_Tool: 	0.001
+- No matched tool given: Ground_Google_SEARCH: 	0.001
+- No matched tool given: [`Web_RAG_Search_Tool`](./web-rag-search-tool): 	0.001
+- No matched tool given: None matched tool given (`Wikipedia_RAG_Search_Tool`, etc.).: 	0.001
+- No matched tool given: [`Wikipedia_Rag_Sh_eSearch_Tool`](https://...): 	0.001
+- No matched tool given: Web-Rag-search-tool: 	0.001
+- No matched tool given: `Wikipedia_Library_Gateway_Tool`: 	0.001
+- No matched tool given: [`web_rag_search_tool`](./assets/WebRagsSearchTool.py): 	0.001
+- No matched tool given: W_Pip_Research_Generalist: 	0.001
+- No matched tool given: 'Ground_Google_Search_Tool': 	0.001
+- No matched tool given: $Web\_RAG\_Search\_Tool$: 	0.001
+- No matched tool given: Wikipediera_RAG_Search_Tool: 	0.001
+- No matched tool given: Wipeout_Reason_Model_2_Widest_Best_First: 	0.001
+- No matched tool given: `Wikipedia_RagSearchTool`: 	0.001
+- No matched tool given: Web-RagSearchTool: 	0.001
+- No matched tool given: WipeRags: 	0.001
+- No matched tool given: Wikipedia Routa Search Tool: 	0.001
+- No matched tool given: ``Wikipedia_RAG_SEARCH_TOOL``: 	0.001
+- No matched tool given: `Wikipedia_RAG_SEARCH_TOOL`: 	0.001
+- No matched tool given: `Python_Code_Generator_Tool`: 	0.001
+- No matched tool given: `Web_rag_search_tool`: 	0.001
+- No matched tool given: `Web_Rag_Search_TOOL`: 	0.001
+- No matched tool given: Wikipeda_Rag_Search_Boool: 	0.001
+- No matched tool given: No matched tool given: 	0.001
+- No matched tool given: 'Web_RAG_Search_Tool': 	0.001
+- No matched tool given: Wikipedia-Rag-Search-Tool: 	0.001
+- No matched tool given: Web-Rag-Search-Tool: 	0.001
+- No matched tool given: `Web_RAG_Search_TOOL`: 	0.001
+- No matched tool given: WIPedia_Rag: 	0.001
+- No matched tool given: `Wikipedia_RagSearchTool`.: 	0.001
+- No matched tool given: No matched tool given: `Wikipedia_RAG_Search_Tool`: 	0.001
+- No matched tool given: Wikipedia_RO_SEARCH_TOOL: 	0.001
+- No matched tool given: specifies correct name exactly.): 	0.001
+- No matched tool given: `Wikipedia_Rag Search Tool`.: 	0.001
+- No matched tool given: `Wikipedia_Rag_SEARCH_TOOL`: 	0.001
+- No matched tool given: WebRagSearch: 	0.001
+- No matched tool given: `historica.fandom.com/wiki/Henry_Radclyffe,_2nd_Earl_of_Sussex`: 	0.001
+- No matched tool given: ``Wikipedia_RAG_Search``: 	0.001
+- No matched tool given: [`Web_RAG_SEARCH_TOOL`](./metadata.json): 	0.001
+- No matched tool given: State the exact name..." This implies I am generating text based on my internal knowledge retrieval capabilities using those named tools *if they existed*, OR am acting as if they exist? Actually, looking at previous examples in your prompt history style... There are NO file names or actual code snippets given here that can be executed by any REAL python script because there's no Python environment set up!: 	0.001
+Scores saved to 2wiki/results/Qwen3.5-0.8B/final_scores_direct_output.json

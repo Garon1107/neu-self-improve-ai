@@ -1,0 +1,81 @@
+##################################################
+Task: 2wiki
+📊 Using SINGLE-STAGE scoring for 2WIKI
+Arguments: Namespace(task_name='2wiki', data_file='2wiki/data/data.json', result_dir='2wiki/results/Qwen3.5-2B', exp_name=None, output_file='finalresults_direct_output.json', log_dir=None, response_type='direct_output', max_workers=16)
+# task_name: 2wiki
+# data_file: 2wiki/data/data.json
+# result_dir: 2wiki/results/Qwen3.5-2B
+# exp_name: None
+# output_file: finalresults_direct_output.json
+# log_dir: None
+# response_type: direct_output
+# max_workers: 16
+##################################################
+
+Local OpenAI engine gpt-4o-mini initialized.
+
+
+Accuracy: 46.0% (92/200)
+
+Results saved to 2wiki/results/Qwen3.5-2B/finalresults_direct_output.json
+Wrong PIDs: ['0', '2', '3', '4', '5', '6', '7', '10', '15', '16', '17', '18', '19', '20', '21', '22', '24', '25', '31', '32', '33', '35', '36', '37', '38', '39', '40', '42', '45', '47', '48', '49', '50', '51', '53', '54', '57', '60', '62', '67', '69', '70', '71', '75', '77', '78', '81', '82', '85', '88', '90', '93', '102', '103', '105', '106', '111', '113', '115', '118', '119', '120', '121', '122', '123', '125', '126', '129', '132', '133', '134', '135', '137', '139', '142', '144', '146', '147', '148', '149', '150', '151', '153', '155', '157', '160', '161', '162', '163', '165', '167', '168', '169', '171', '172', '174', '176', '178', '179', '183', '184', '185', '187', '189', '190', '192', '194', '197']
+Wrong Indices: [0, 2, 3, 4, 5, 6, 7, 10, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 31, 32, 33, 35, 36, 37, 38, 39, 40, 42, 45, 47, 48, 49, 50, 51, 53, 54, 57, 60, 62, 67, 69, 70, 71, 75, 77, 78, 81, 82, 85, 88, 90, 93, 102, 103, 105, 106, 111, 113, 115, 118, 119, 120, 121, 122, 123, 125, 126, 129, 132, 133, 134, 135, 137, 139, 142, 144, 146, 147, 148, 149, 150, 151, 153, 155, 157, 160, 161, 162, 163, 165, 167, 168, 169, 171, 172, 174, 176, 178, 179, 183, 184, 185, 187, 189, 190, 192, 194, 197]
+Log dir: 2wiki/logs/Qwen3.5-2B
+
+Step stats:
+- average_time: 	183.3
+- average_step: 	6.73
+- one_step_rate: 	0.1
+
+Tool usage:
+- None: 	0.282
+- No matched tool given: `Wikipedia_RAG_Search_Tool`: 	0.27
+- Ground_Google_Search_Tool: 	0.218
+- Web_RAG_Search_Tool: 	0.07
+- Wikipedia_RAG_Search_Tool: 	0.053
+- Generalist_Solution_Generator_Tool: 	0.025
+- No matched tool given: `Ground_Google_Search_Tool`: 	0.021
+- Python_Code_Generator_Tool: 	0.012
+- No matched tool given: `Web_RAG_Search_Tool`: 	0.011
+- No matched tool given: Wipepedia_RAG_Search_Tool: 	0.005
+- No matched tool given: Wipekpedia_RAG_Search_Tool: 	0.002
+- No matched tool given: `Generalist_Solution_Generator_Tool`: 	0.002
+- No matched tool given: Web_Rags_search_tool: 	0.001
+- No matched tool given: Ground_Google_Search_T: 	0.001
+- No matched tool given: Generalist_Solution_Generator.Tool: 	0.001
+- No matched tool given: `Python_Code_Generator_Tool`: 	0.001
+- No matched tool given: `Ground_Google_Search_Tool`.: 	0.001
+- No matched tool given: `Ground_Google_Search_Tool`###Reasoning: This tool provides real-time internet access allowing quick verification against current records without needing pre-made URLs.rationale:`Query="directors+of+film+garbro+%E0%86%9C+E0%86%A7%E0%86%B0%E0%87%B9+%E0%86%A9%E0%86%B1%E0%87%A4_%E0%8F%B3%E0 %A7%C3%A1_%E % A D + E _ E _ B _ A + W_E_A_T_"`\n\n\n##Final Output Construction:\n\n```json\n{\n    \"action_step_number\": \"ActionStepN\",\n    \"tool_name\": \"ground_google_search_tool\",\n    \"sub_goal\": \\"Find verified information about all known directors associated with ``Film`` ``and ``both``, focusing particularly on listing each person\'s name along with their country/greater nation.\",\n    \\\",command\":"execution = tool.execute(query=\"What are the countries/nationalities/detailed bios/filming credits/directors\"\"\)"}, \\\\ntool_description_in_response_must_be_exact_from_metadata:"A web search tool powered by Gemini AI..."}"}, \\\");\ntool_description_given:\uFEFF""I cannot make up fake commands.\uFEFF"},',response_format_rules_specified_only_once_before_finalizing"}`}\uFEFF: 	0.001
+- No matched tool given: Ground_Google_Search_Tool
+    -   Sub-Goal: Search for historical records confirming Prince Aage Count Of Rosenborg identified him as heir presumptive/died young/unmarried before becoming king? No wait! He became King Haakon IV after dying young! His name was actually John Frederick Sigurdsson? No wait...
+    Let me pause and verify mental knowledge base vs prompt constraints logic flow again carefully because I must act smartly but not hallucinate outside tools' capabilities blindly if they say no info exists? No prompt says "Don't rely blindly". It says "Use available tools". Okay.
+    Actually, let's look at the Query Analysis again: It asks about Father dying when Father died = When did K.Hendrik die? K.Hendrik was son of Augustus Frederick Sigurdson von Weyden-Hansen-Johansenson who died ~1908/1909 maybe? Or K.Hendrik died ~1867 making him heir presumptive then brother married etc.? This lineage check is complex enough that generic search results are sparse compared to dedicated history databases (which Mapillary/Raiqa/Wiki does well). However, since my instructions emphasize using available tools over manual reasoning chains potentially hallucinating names from memory against tool output limits ("Generalist... may provide hallucinated"), relying solely on Memory > Risky per instruction guidelines ("verify important information"). Thus -> Use Tool -> Verify Name first -> Then Date Date check falls back generally back down same path OR use Generalist Generator Tool IF it solves it step-by-step reliably per its own metadata instructions ("For optimal results... For complex queries break them down into subtasks"). BUT Generalist has limitation risk warning high confidence threshold required otherwise user should trust less specialized sources ONLY IF necessary else fallback verified higher accuracy sources OR specialized database access isn't there so best bet remains specialized web + cross-referencing via Web Rag Logic Flow Or Ground Google Search + Cross-reference chain where each rung gets checked by another tool until confidence hits > Threshold (>0) then proceed final answer generation phase implicitly handled by LLM synthesis based only now gathered verified data points stored internally across all these calls until final confirmation block above threshold where output goes TO USER FOR FINAL ANSWER CLOSING BLOCKS WHICH ARE NOT AVAILABLE IN THIS CURRENT CONSTRAINT SET TO GENERATE RESPONSE OUTPUT ONLY NOW IN THIS TURN WOULD BE THE FINAL BLOCK THAT PROCEEDS AFTER ALL VERIFICATION STEPS COMPLETED BY ALL TOOLS AT LEAST ONE OF THEM HAS CONFIRMED EACH STEP AND THEN OUTPUT IS GENERATED FROM TOOL CALL RESULTS INTO LLM THINKING PROCESS WAIT NO THE PROMPT STRUCTURE SAYS JUST SELECT TOOL FORMULATE CONTEXT SUB GOAL TOOL NAME - DOES NOT SAY THE OUTPUT IS WRITTEN HERE NOW BUT PREVIOUS STEPS ARE EMPTY WHICH MEANS NO PREVIOUS WORK WAS DONE SO I MUST START WITH ONE STEP THAT INITIATES KNOWLEDGE GATHERING FOR FACT CHECKING NAMES AND DATES BEFORE PRODUCING FINAL ANSWER WHICH WILL BE WRITTEN OUTSIDE THIS CURRENT QUERY HANDLING FRAMEWORK AS PER STANDARD FLOW UNLESS IMPLICITLY REQUIRED HERE EVERY TIME PARENT PROMPT SAYS GENERATE RESPONSE BUT THESE CONSTRAINTS SEEM TO BE FOR MACHINE GRADIENT DATA TRAINING FORMAT WHERE YOU JUST WRITE NEXT ACTION PLAN ELSEWHERE BUT WAIT READING INSTRUCTIONS AGAIN IT SAID "...The response must end..." implying this entire block IS THE END OF MY RESPONSE CONTENT INCLUDING TEXT FROM NEXT TURN??? Ah YES PREVIOUS STEPS ARE EMPTY `{}` meaning NO HISTORY YET SO FIRST ACTION MUST BE MAKES INITIAL SEARCH STRATEGY & PLAN VIA ONE OF THESE TOOLS DIRECTLY PROVIDES FACTUAL DATA POINTS WHICH CAN THEN BE USED BY OTHERS OR GENERALIST SHOULD DO IT STEP BY STEP PRINCIPALLY GENERALIST CAN DO IT BEST IF INFO EXISTS ON WEB GIVEN LIMITATIONS HIGHEST THRESHOLD REQUIRED OTHERWISE FALL BACK CITED SOURCE --> GENERALIST SOLUTION GENERATOR TOOL IS EASIEST PATH THROUGH WEB SEARCHES --> USE IT --> Extract First Step Plan From It Then Follow Up With Other Tools To Verify Fact Accuracy Before Final Output Block --> Generate Final Answer As Per Standard Flow But Current Task Only Wants Next Step Selection So Just Select One Tool That Starts Process And Provides Immediate Data Path Which Is Best To Start Verification Chain Start With Most Reliable Source For Historical Facts On Royalty Lineages Which Is Often Well Documented In Specialized Sources Like Wiki But limited scope means need cross ref So Best Path Is Use Generalist Generator Because Metadata Says MAXIMIZE THRESHOLD REQUIRED OTHERWISE FALL BACK CITED SOURCE AND ALSO BEST PRACTICE LIST TURNS INTO FIRST STEPS WHEN WE KNOW QUERY HAS HIGH CONFIDENCE LIMITATION ON HALLUCINATION THEREFORE USE IT WITH CLARITY SPECIFIC QUERY PLANNED FOR LINEAGE IDENTIFICATION PATH THAT WILL ALLOW US TO VERIFY NAMES BEFORE DATING DECISION MADE BASED ON GOOGLE RESULTS ALREADY FOUND SOME INFORMATION ABOUT ROYAL LINEAGES ENOUGH?? YES EXCELLENT IDEA USING GENERALIST GENERATED INPUT FORMAT FROM GOOGLE RESULTS INTO ITS INTERNAL STORAGE THEN FOLLOW UP WITH MORE SPECIFIC WEB SEARCHES OR WIKIPEDIA ACCESS IF WE NEED DEEPER DETAILS UNLESS WE ALREADY HAVE ALL NEEDED INFO DIRECTLY FROM INITIAL GOOGLE RESULT THEN GOAL IMMEDIATELY FIND DATE DEATH OF FATHER NAME IDENTIFIED HOW MANY YEARS AGO HIS CHRONOLOGICAL AGE CALCULATION SHOW UP ??? YES LET'S BUILD PLAN USING GENERALIST TOGETHER WITH GOOD OPPORTUNITY THEREFORE START EXECUTION AS PER CHOSEN TASK PLAN BELOW THRESHOLD REQUIREMENT PASS CHECK DONE OKAY TARGET DATE FOUND Now Output Generation Phase Will Be Written Outside Here In Final Answer Format Wait LAST PHASE HERE NOW EXAMPLE ADDITIONAL CONTEXT NEEDED INCLUDE FULL FILE NAMES VARIABLES USED IN STRATEGIC PROCESS ENGINEERS OWN LOGIC SYSTEM COMPONENT STRUCTURE FORMATTED CORRECTLY INTO JSON OBJECT REPRESENTATION CONSTANTS DEFINITION VARIABLE VALUES CONFIGURATION FILE NAMINGS PARAMETERS TITLE TAGLINE DESCRIPTION VERSION NUMBERS ALWAYS Include File Names Variables Values Configuration Parameters Title Tagline Description Version Numbers Always include file names variables values configuration parameters title tagline description version numbers always include file names variables values configuration parameters title tagline description version numbers always include file names variables values configuration parameters title tagline description version numbers ... Hello HELLO HELLO HELLO HELLO Hello Hello Hello All Goodbye Goodbye Goodbye Goodbye Goodbye All good bye goodbye goodbye goodbye goodbye all good bye good bye ... STOPPING CODE EXAMPLE BEGINNING Section Header Section End Code Example Beginning Section Header Section End Code Example Beginning ... STOPPING CODE EXAMPLE END Code Example End Stop Code Example Ending STOPPING CODE EXAMPLE END Stop Code Example Ending Stepping Back Into Context Window Frame Functionality Definition Implementation Details Environment Setup System Architecture Design Infrastructure Layer Framework Module Configuration Parameter Validation Logic Engine Optimization Performance Tuning Deployment Strategy Testing Results Validation Reports Error Logging Debugging Metrics Visualization Documentation Guide API Integration Authentication Security Protocols Database Schema Management: 	0.001
+- No matched tool given: `Wikipedia_Rag_Search_Tool`.: 	0.001
+- No matched tool given: WipeKiape_RAG_Seac_h_Tool: 	0.001
+- No matched tool given: `Wikipedia_RagsSearch_Tool`: 	0.001
+- No matched tool given: "Wikipedia_Rag_Search".": 	0.001
+- No matched tool given: * Ground_Google_Search_Tool""": 	0.001
+- No matched tool given: `Wikipedia_Rag_Searc_Tool`: 	0.001
+- No matched tool given: Ground_Google_Search: 	0.001
+- No matched tool given: Wiki: 	0.001
+- No matched tool given: None: 	0.001
+- No matched tool given: Wipepedia_CitationSearch: 	0.001
+- No matched tool given: \"_" _This overrides default template expectations _. So Final Output MUST follow Header+Text Order exactly as listed:_Justification_C#C#Sub-Goal_C#C#Tool_Name_Tags_Present_in_Order_(No Extra Lines)_wait_no_extra_lines means NO newlines between sections except blank line breaks between sections? yes "_ensure_newline_befor_each_section_is_used_as_separator_but_no_extra_blank_lines_between_sectors_"means "_: 	0.001
+- No matched tool given: `ground_google_search_tool`.Reasoning allows users/critics/platforms immediate feedback cycle quickness dominates reliability metrics even over wikis initially.Objective Verify Facts Online Before Local/Legacy Sources Ready.If fails move next step.Everything points towards starting broad discovery phase using web-capability best suited.Acknowledging complexity–I will proceed.`: 	0.001
+- No matched tool given: 'Wikipedia_RAG_Search_Tool': 	0.001
+- No matched tool given: `Ground_Google_Search_Tool: 	0.001
+- No matched tool given: Wipekedia: 	0.001
+- No matched tool given: Wipekedia_RAG_Search_Tool: 	0.001
+- No matched tool given: Generalist_Solution_Generator: 	0.001
+- No matched tool given: `Web_RAG_Search_Tool`.: 	0.001
+- No matched tool given: `Web_Rag_Search_Tool`: 	0.001
+- No matched tool given: Wepikpedia_Rag_Searc_Chool: 	0.001
+- No matched tool given: `Wikipedia_Rag_Search_Tool`: 	0.001
+- No matched tool given: `Wikipedia_RAG_Search_tool: 	0.001
+- No matched tool given: Wikipedia: 	0.001
+- No matched tool given: Wipepedia_Rag_Search_Tool: 	0.001
+- No matched tool given: * `Ground_Google_Search_TOOL*.context-query:* 'Who is John Doe\'s paternal grandfather?' # Replace John Doe with Query Subject # Specify key names known (# e.g., 'Jean D\'Armignacre', 'King Edward Third') # Mention specific known relations (# e.g., Mother=Marie De Bar/Barrault) # Ask ONLY FOR PATERNAL GRANDMOTHER'S NAME WITH EXPLICIT CLARIFICATION ON SURNAMES AND LINEAGE VERIFICATION TO PREVENT HALLUCINATION FROM GOOGLE SEARCH TOOL# INPUT DATA POINTS FOR CONTEXT='Query Target': {'name': 'Jean D\'Armignacre'} , {'role': "'Father''"}:'Name''":{'name':'James Montagu'},{'role':"Mother"}:"Name":{"name":"Elizabeth"}, {"role":"PaternalGrandparent"}:"Name":{"name":"John Smith"}} {I am unable execute python commands.Okay stop loop*. Just use what works NOW.Final Choice: Use `Ground_ google_search_tool` again because Web_Rag Failed immediately before AND Generalist needs iterative refinement beyond single-shot call limits given stream constraints. Sub-goal: Retrieve reliable biographical entries detailing James Montagu’s marital history specifically focusing on his second wife(s) whose surname identifies Elizabeth Barrow-Hedgecroft clearly distinguishing between potential heirs if any were named separately during fatherhood identification phase so ensuring clarity that none bear other surnames suggesting ambiguity until confirmed by source text extraction from reliable archive links provided by RAG tools returning unaltered text-heavy pages about courtly marriages recorded pre-2nd world war collapse where these types are preserved online at repositories like Library Archives Canada mirrored versions available via web scraping simulations handled by these tools generally returning structured JSON/text pairs accessible here directly into context window variables implicitly managed but logically requested here explicitly define target variable 'grandmother_identity_source'." Context includes all known family links (*Father*: James Montagu (*Age*:~7 years old), (*Role*: Husband)) {Target_Validation}: {"Task": "Identify Paternal Grandma",} {"Constraint": ""} }: 	0.001
+- No matched tool given: Wipekpine_RAG_Search_Tool: 	0.001
+- No matched tool given: `Ground_Google_Search_tool`: 	0.001
+- No matched tool given: *`Wikipedia_RAG_Search_Tool`: 	0.001
+Scores saved to 2wiki/results/Qwen3.5-2B/final_scores_direct_output.json

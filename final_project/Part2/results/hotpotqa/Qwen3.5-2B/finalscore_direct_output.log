@@ -1,0 +1,56 @@
+##################################################
+Task: hotpotqa
+📊 Using SINGLE-STAGE scoring for HOTPOTQA
+Arguments: Namespace(task_name='hotpotqa', data_file='hotpotqa/data/data.json', result_dir='hotpotqa/results/Qwen3.5-2B', exp_name=None, output_file='finalresults_direct_output.json', log_dir=None, response_type='direct_output', max_workers=16)
+# task_name: hotpotqa
+# data_file: hotpotqa/data/data.json
+# result_dir: hotpotqa/results/Qwen3.5-2B
+# exp_name: None
+# output_file: finalresults_direct_output.json
+# log_dir: None
+# response_type: direct_output
+# max_workers: 16
+##################################################
+
+Local OpenAI engine gpt-4o-mini initialized.
+
+
+Accuracy: 69.0% (69/100)
+
+Results saved to hotpotqa/results/Qwen3.5-2B/finalresults_direct_output.json
+Wrong PIDs: ['0', '4', '5', '6', '7', '9', '10', '17', '18', '21', '22', '25', '28', '37', '41', '49', '55', '57', '59', '63', '68', '69', '77', '79', '82', '84', '88', '90', '92', '97', '99']
+Wrong Indices: [0, 4, 5, 6, 7, 9, 10, 17, 18, 21, 22, 25, 28, 37, 41, 49, 55, 57, 59, 63, 68, 69, 77, 79, 82, 84, 88, 90, 92, 97, 99]
+Log dir: hotpotqa/logs/Qwen3.5-2B
+
+Step stats:
+- average_time: 	94.6
+- average_step: 	3.65
+- one_step_rate: 	0.3
+
+Tool usage:
+- Ground_Google_Search_Tool: 	0.299
+- No matched tool given: `Wikipedia_RAG_Search_Tool`: 	0.195
+- None: 	0.189
+- Wikipedia_RAG_Search_Tool: 	0.096
+- Web_RAG_Search_Tool: 	0.09
+- Generalist_Solution_Generator_Tool: 	0.052
+- Python_Code_Generator_Tool: 	0.025
+- No matched tool given: Wipepedia_RAG_Search_Tool: 	0.005
+- No matched tool given: `Python_Code_Generator_Tool`: 	0.005
+- No matched tool given: `Ground_Google_Search_Tool`: 	0.005
+- No matched tool given: `Web_RAG_Search_Tool`: 	0.005
+- No matched tool given: None? No wait, the list goes down past 'Action Steps' into commands that show results later? Actually looking at the structure provided under "Previous Steps": It lists Actions and Commands/Results sequentially ending at 'Action Steps' -> ... -> 'Command': Not command... result... But then it jumps further down into more detailed execution logs showing successful answers from Tools used previously (e.g., Ground_Google_Search_Tool worked successfully).
+    *   Okay, assuming we are continuing a session where tools have been iteratively tested or are available now via context window updates often implied by such tasks (or simply using Ground Google Search as per best practices for general knowledge). The task asks us to determine THE optimal next step based on available tools AND previous steps history which shows successful use of `Ground_Google_Search_Tool`. Even though action step X-7 says "No matched tool", standard procedure when generic search has yielded positive citation-based results is often preferred over generic generators unless specified otherwise for accuracy seekers who want citations ("With citation support").
+    *   Therefore, using another instance of Ground Google Search ensures high reliability with citations as requested ("The query requires accurate and verified information").: 	0.003
+- No matched tool given: `Wikipedia_Rag_SearCh_Tool`: 	0.003
+- No matched tool given: Ground_Google_Search_Tool</answer>: 	0.003
+- No matched tool given: `Generalist_Solution_Generator_Tool: 	0.003
+- No matched tool given: `Wikipedia_RAG_Search_tool`: 	0.003
+- No matched tool given: `Ground_Google_Search_TOOL`: 	0.003
+- No matched tool given: `Generalist_Solution_Generator_Tool`: 	0.003
+- No matched tool given: Wikipedia_RAG_Search_Tool</answer>: 	0.003
+- No matched tool given: Ground_DoggleGoogleSearchTool: 	0.003
+- No matched tool given: Ground.google.search.tool: 	0.003
+- No matched tool given: Wiki_Search: 	0.003
+- No matched tool given: </answer>: 	0.003
+Scores saved to hotpotqa/results/Qwen3.5-2B/final_scores_direct_output.json

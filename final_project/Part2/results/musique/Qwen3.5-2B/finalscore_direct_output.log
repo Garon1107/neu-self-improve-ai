@@ -1,0 +1,74 @@
+##################################################
+Task: musique
+📊 Using SINGLE-STAGE scoring for MUSIQUE
+Arguments: Namespace(task_name='musique', data_file='musique/data/data.json', result_dir='musique/results/Qwen3.5-2B', exp_name=None, output_file='finalresults_direct_output.json', log_dir=None, response_type='direct_output', max_workers=16)
+# task_name: musique
+# data_file: musique/data/data.json
+# result_dir: musique/results/Qwen3.5-2B
+# exp_name: None
+# output_file: finalresults_direct_output.json
+# log_dir: None
+# response_type: direct_output
+# max_workers: 16
+##################################################
+
+Local OpenAI engine gpt-4o-mini initialized.
+
+
+Accuracy: 14.0% (28/200)
+
+Results saved to musique/results/Qwen3.5-2B/finalresults_direct_output.json
+Wrong PIDs: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '24', '25', '26', '27', '28', '29', '30', '31', '32', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '53', '54', '56', '58', '59', '60', '61', '62', '65', '66', '67', '68', '69', '70', '72', '73', '74', '75', '77', '78', '79', '80', '82', '84', '85', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100', '102', '103', '104', '105', '106', '107', '108', '109', '110', '112', '113', '114', '115', '116', '118', '120', '121', '122', '123', '124', '125', '126', '127', '129', '130', '131', '132', '133', '134', '135', '137', '138', '139', '140', '141', '142', '144', '145', '146', '147', '148', '149', '150', '151', '152', '153', '154', '155', '156', '157', '158', '159', '161', '162', '163', '164', '165', '166', '167', '168', '169', '170', '172', '173', '174', '175', '176', '177', '178', '179', '181', '182', '183', '185', '186', '187', '188', '191', '193', '194', '196', '197', '198']
+Wrong Indices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 53, 54, 56, 58, 59, 60, 61, 62, 65, 66, 67, 68, 69, 70, 72, 73, 74, 75, 77, 78, 79, 80, 82, 84, 85, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 102, 103, 104, 105, 106, 107, 108, 109, 110, 112, 113, 114, 115, 116, 118, 120, 121, 122, 123, 124, 125, 126, 127, 129, 130, 131, 132, 133, 134, 135, 137, 138, 139, 140, 141, 142, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 172, 173, 174, 175, 176, 177, 178, 179, 181, 182, 183, 185, 186, 187, 188, 191, 193, 194, 196, 197, 198]
+Log dir: musique/logs/Qwen3.5-2B
+
+Step stats:
+- average_time: 	250.5
+- average_step: 	6.96
+- one_step_rate: 	0.1
+
+Tool usage:
+- None: 	0.39
+- Ground_Google_Search_Tool: 	0.204
+- No matched tool given: `Wikipedia_RAG_Search_Tool`: 	0.202
+- Wikipedia_RAG_Search_Tool: 	0.055
+- Web_RAG_Search_Tool: 	0.045
+- Generalist_Solution_Generator_Tool: 	0.032
+- No matched tool given: `Ground_Google_Search_Tool`: 	0.017
+- No matched tool given: `Web_RAG_Search_Tool`: 	0.011
+- Python_Code_Generator_Tool: 	0.011
+- No matched tool given: `Wikipedia_Rag_Search_Tool`: 	0.004
+- No matched tool given: Ground_Google_Search: 	0.002
+- No matched tool given: `Ground_Google_Search_tool`: 	0.002
+- No matched tool given: `Python_Code_Generator_Tool`: 	0.002
+- No matched tool given: Wipepedia_RAG_Search_Tool: 	0.002
+- No matched tool given: `Generalist_Solution_Generator_Tool`: 	0.001
+- No matched tool given: `Ground_Google_Search_Tool`.: 	0.001
+- No matched tool given: "*AND*"*"Rules:..."*"Select only ONE tool..."*"Context contains ALL info"..."*The sub-goal MUST BE DIRECTLY ACHIEVABLE..."*. Okay so structure is Justifcation->Context->SubGoal->ToolName ending workflow.*This matches standard format.*So now focus Final Choice Logic:*: 	0.001
+- No matched tool given: State exact name..." followed by newline separators then actual values list ending exactly at "`Tools:`", `"Required Values:", "{tool_data}"`. Wait no—the prompt asks me TO FOLLOW THE FORMAT ABOVE IN THIS OUTPUT BLOCK entirely matching structure requested above starting WITH Justification THEN Context THEN SubGoal THEN ToolName list ending properly within required values section constraints while ensuring final lines contain exact strings `"Tools:"`, `"Required Values:", "{tool_data}"`.: 	0.001
+- No matched tool given: No matched tool given: `Generalist_Solution_Generator_Tool`: 	0.001
+- No matched tool given: Wipekpedia_RAG_Search_Tool: 	0.001
+- No matched tool given: Wipekiedia_RAG_Search_Tool: 	0.001
+- No matched tool given: * Ground_Direct_Citation_Tools.__name__ = 'Ground_Direct_Citation_Tools'.* Input:* Query string containing specific year constraints.* Output:* Citation-backed result set.* Instruction check:* Follows rules exactly?* Yes.: 	0.001
+- No matched tool given: `Web_Rag_search_tool`: 	0.001
+- No matched tool given: ` Ground_Google_Search_tool`: 	0.001
+- No matched tool given: WIRP_Tool: 	0.001
+- No matched tool given: *Wikipedia_Rag_Search_Tool*: 	0.001
+- No matched tool given: Wipekipedia_RAG_Search_Tool: 	0.001
+- No matched tool given: "To retrieve verified biographical details linking creators/groups.": 	0.001
+- No matched tool given: `Wikipedia_RAG_Search_TOOL`: 	0.001
+- No matched tool given: wiki_search: 	0.001
+- No matched tool given: `"URL_RETRIEVAL_TOOL"` *(Representative placeholder consistent with latest iteration concept)*    
+Wait no need placeholders must stick EXACTLY TO PROVIDED TOOL NAMES list! Provided list has ONLY two active types besides others excluded/not listed fully yet active potential candidates are Ground_Google/Search AND Web/Rag/Wiki Rag.*    
+Correct Final Choice Strategy After Revisiting All Steps & Rules Focused On Completing Task With Optimal Efficiency Per Best Practices Guidelines While Adhering Strictly To Single Selection Constraint From Initial Negative Feedback Which Implied Need For More Structured Source Access Than Simple Snippets From Unreliable Generalist Generators Or Basic Snippets From Limited Domain Coverage Sources Represented By Google Search Only Without Citations Which Might Suffice If Accurate But Better Yet To Ensure Accuracy Cross Check Via Citation Enabled Google Search First Then Wrap In Wiki Rag Tool Chain If Needed BUT Can Only Select ONE TOOL NOW So Must Choose Between Current Available Options*:    
+If forced choose ONE currently active labeled option capable fulfilling verified request efficiently per constraints WITHOUT requiring full multi-step research loop extension beyond current commitment window since task completion priority demands decisive action over iterative refinement cycle initiation delay*: Chosen Path Is Direct Execution Of Most Robust Available Mechanism That Matches Query Intent And Avoids Premature Iteration Overhead While Maintaining High Accuracy Standard Operating Procedure Under Optimized Conditions With Full Trust In Provided Knowledge Base Integrity::*: 	0.001
+- No matched tool given: `Wikipedia_RAG_Search_tool`: 	0.001
+- No matched tool given: `Ground_Google_Search_Tool: 	0.001
+- No matched tool given: * `Wikipedia_RAG_Search_Tool`: 	0.001
+- No matched tool given: ". Then rules say "The response must end...". Okay so I MUST STOP CURRENTLY AFTER SELECTING BEST TOOL AND PROVIDING THAT DATA STRUCTURED PERFECTLY matching flow EVEN IF REAL SEARCH TAKES TIME YETHERE WE GO CHECK INSTRCTIONS AGAIN THEY SAY "TASK DETERMINE OPTIMAL NEXT STEP..." NOT SAY IT'S ONE SHOT ANALYSIS ONLY BUT ALSO RESPONSE FORMAT ENDS AT "...Tool Name:". So yes just outputting plan sufficient now assuming system will execute plan next turn? Or does user expect me to actually click button now inside thought block then return full text eventually including final summary generated manually once simulated result arrives behind scenes then wrap up text saying '"Tool": Ground_Google_Search_Tool'. Yes." Okay proceed.": 	0.001
+- No matched tool given: \"\\nThe Rules say:"\\nThe response must end with..." after listing \"Context\", \"Sub-Goal\", \"Tool Name\".\nSo Final Output Order Must Be:\nyour_response_end = {Justification Line \u26a3} \u26a5 {Context Block} \u26a5 {Sub-goal Line} \u26a5 {Tool_name Line}\nyour_response_end = [Justification] [CONTEXT BLOCK] [SUB-GOAL LINE] [TOOL NAME LINE]\nyour_response_end = {\u279c\ud83d\uddfa\ufe0f\ud83d\uddfa\ufe0f Justify}\nd{\ud83e\uddd9_context}\nd{\ud83d\dcef_subgoal}\nt{tool_name}".\no.{Justify}{ctx}{sub}{tool}.o.'Final Plan: Use Ground_Google.Search_Tool because Query demands temporal accuracy/expansion phases spanning decades/year ranges while also needing entity linking across multiple timeframes (\u2b54ajurans empire indep + thailand/nam khan bdr), making citation-backed chronological verification more valuable than static snippet retrieval; also ground google supports adding_citations=True enabling cross-validation against conflicting narratives often present when dealing with empire boundaries versus ethnic populations displaced according to colonial-era migrations documented historically online.): 	0.001
+- No matched tool given: * Ground_Google_: 	0.001
+- No matched tool given: `Web_Rrag_Search_Tool`: 	0.001
+- No matched tool given: Ground_Google_Searched_Tool: 	0.001
+- No matched tool given: `Web_Rag_Search_Tool`: 	0.001
+Scores saved to musique/results/Qwen3.5-2B/final_scores_direct_output.json
